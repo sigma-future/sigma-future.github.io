@@ -1,12 +1,226 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sigma Future Studio</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('https://sigma-future.com/illustration.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 700px;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.3) url(backcover.png) no-repeat bottom center;
+	  background-size: 100% auto;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .section-top {
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: -30px;
+    }
+
+    .studio-name {
+	font-size: 2.4em;
+	margin-bottom: 25px;
+	font-family: "Adobe 黑体 Std R";
+	font-weight: bold;
+	color: #FFF;
+    }
+	
+	.studio-subtitle {
+	font-size: 1em; /* 小字，可再调小一点 */
+	color: #FFF; /* 灰色 */
+	margin: 5px 0 10px; /* 上下间距，调节文字和上下元素的距离 */
+	font-weight: bold;
+	font-family: "Adobe 黑体 Std R";
+	}
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links a img:hover {
+      transform: translateY(-5px);
+    }
+
+    .divider {
+      height: 1px;
+      background: #ddd;
+      margin: 0;
+    }
+
+    .section-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 30px;
+    }
+
+    .intro {
+	flex: 1 1 45%;
+	font-size: 1eft;
+	font-family: "Adobe 黑体 Std R";
+	color: #FFF;
+    }
+
+    
+	.intro-title {
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+	.intro-text {
+	  font-size: 1em;
+	  line-height: 1.6;
+	}
+	
+    .nav-links {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
+    }
+
+    .nav-links a img {
+      width: 187px;
+      height: 52px;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-links a img:hover {
+      transform: scale(1.1);
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8em;
+      color: #aaa;
+      margin: 20px 0 0;
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: 700px) {
+      .section-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .intro, .nav-links {
+        flex: 1 1 100%;
+        align-items: center;
+      }
+
+      .nav-links {
+        margin-top: 30px;
+      }
+
+      .nav-links a img {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
 <body>
-<p>This is a test page</p>
-<p>这是一个测试网页</p>
+  <div class="container fade-in">
+    <!-- Section 1: Logo, Studio Name, Social Links -->
+    <div class="section-top">
+      <img src="F64[D]A_HLZU(94Q5VR]}`N.png" alt="Logo" class="logo">
+      <div class="studio-subtitle">INDIE GAME DEVELOPER</div>
+      <div class="studio-name">Sigma Future Studio</div>
+      <div class="social-links">
+        <a href="https://space.bilibili.com/751306" title="Twitter">
+          <img src="../sigmafuture/sigma-future/bilibili_1.png" alt="Bilibili">
+        </a>
+        <a href="https://weibo.com/u/3172771100" title="Instagram">
+          <img src="../sigmafuture/sigma-future/weibo_1.png" alt="Weibo">
+        </a>
+        <a href="https://www.pixiv.net/users/9328101" title="Email">
+          <img src="../sigmafuture/sigma-future/pixiv_1.png" alt="Pixiv">
+        </a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Section 2: Bottom split -->
+    <div class="section-bottom">
+      <!-- Left: Intro -->
+      <div class="intro">
+  <p class="intro-title"><span lang="EN-US">Welcome to my page!</span>!!</p>
+  <p class="intro-text">
+    A place for creative experiments, storytelling, and immersive worlds. 
+    We craft games, write novels, and build unique experiences for the future.
+  </p>
+</div>
+
+      <!-- Right: Nav links -->
+      <div class="nav-links">
+        <a href="#" title="Games">
+          <img src="game_list.png.png" alt="Games">
+        </a>
+        <a href="#" title="Novels">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Open_book_icon.svg/64px-Open_book_icon.svg.png" alt="Novels">
+        </a>
+        <a href="#" title="Other Works">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Magic_wand_icon.svg/64px-Magic_wand_icon.svg.png" alt="Other Works">
+        </a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      © Sigma Future Studio
+    </div>
+  </div>
 </body>
 </html>
